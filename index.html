@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create a form that allows new students to register by filling 
+    out personal details like name, age, gender, course selection, and agreeing to terms. -->
+    <h1>NEW STUDENT FORM</h1>
+    <p>Register now</p>
+    
+    <div>Name:
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        Age: <input type="number" name="myage">
+    </div>
+    <br>
+    <div>
+        Gender: <input type="radio" name="mygender">Male <input type="radio" name="mygender">Female
+    </div>
+    <br>
+    <p>Select the course:</p>
+    <div>
+        <label for="mycourse">Course</label>
+        <select name="myCourse" id="course">
+            <option>COMPUTER SCIENCE</option>
+            <option>AIML</option>
+            <option>DS</option>
+            <option>ELECTRONICS</option>
+            <option>ELECTRICAL</option>
+            <option>MECHANICAL</option>
+        </select>
+    </div>
+    <br>
+    <div><input type="checkbox" name="Agreement" checked>*I agree</div>
+    <br>
+    <div>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </div>
+</body>
+</html>
