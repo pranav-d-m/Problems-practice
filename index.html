@@ -6,41 +6,115 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Create a form that allows new students to register by filling 
-    out personal details like name, age, gender, course selection, and agreeing to terms. -->
-    <h1>NEW STUDENT FORM</h1>
-    <p>Register now</p>
-    
-    <div>Name:
-        <input type="text">
-    </div>
-    <br>
     <div>
-        Age: <input type="number" name="myage">
+        <h1>STUDENT REGISTRATION FORM</h1>
     </div>
-    <br>
     <div>
-        Gender: <input type="radio" name="mygender">Male <input type="radio" name="mygender">Female
+        <h1>STONERIDGE UNIVERSITY</h1>
     </div>
-    <br>
-    <p>Select the course:</p>
-    <div>
-        <label for="mycourse">Course</label>
-        <select name="myCourse" id="course">
-            <option>COMPUTER SCIENCE</option>
-            <option>AIML</option>
-            <option>DS</option>
-            <option>ELECTRONICS</option>
-            <option>ELECTRICAL</option>
-            <option>MECHANICAL</option>
-        </select>
-    </div>
-    <br>
-    <div><input type="checkbox" name="Agreement" checked>*I agree</div>
-    <br>
-    <div>
-        <input type="submit" value="SUBMIT">
-        <input type="reset" value="RESET">
-    </div>
+    <form action="backend.php">
+        <div>
+            <h2>Personal Information</h2>
+            <label for="fname">
+                <div>First Name:
+                    <input type="text" name="fname" placeholder="First name" required>
+                </div>
+            </label>
+            <br>
+            <div>
+                Last Name: 
+                <input type="text" name="lanme" placeholder="Last name">
+            </div>
+            <br>
+            <div>
+                Date of Birth:
+                <input type="date" name="date" placeholder="Date of birth" required>
+            </div>
+            <br>
+            <div>
+                Gender: 
+                <input type="radio" name="gender">Male <input type="radio" name="gender">Female <input type="radio" name="gender">Other
+            </div>
+            <br>
+            <div>
+                E-mail address
+                <input type="email" name="email" placeholder="Enter email-address">
+            </div>
+            <br>
+            <div>
+                Phone Number
+                <input type="text" name="tel" placeholder="Enter phone number" required>
+            </div>
+            <br>
+            <div>
+                Aadhar Number:
+                <input type="password" name="aadhar" placeholder="Enter 12 digit aadhar number" required>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div>Address Section
+            <div>
+                Street address:
+                <input type="text" name="street add" placeholder=" Enter address">
+            </div>
+            <br>
+            <div>
+                City:
+                <input type="text" name="city" placeholder=" Enter City">
+            </div>
+            <br>
+            <div>
+                State/Province:
+                <input type="text" name="state" required>
+            </div>
+            <br>
+            <div>
+                Postal Code:
+                <input type="text" name="postalcd" placeholder="Enter 6 digit postal code">
+            </div>
+            <br>
+            <div>
+                Country:
+                <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>Australia</option>
+                <option>UK</option>
+                <option>Sweden</option>
+                <option>Denmark</option>
+                <option>Germany</option>
+                <option>Italy</option>
+                <option>France</option>
+                <option>Spain</option>
+                <option>New York</option>
+                </select>   
+            </div>
+        </div>
+        <hr>
+        <div>
+            Upload your recent photo: <input type="file" required>
+        </div>
+        <br>
+        <div>
+            Select your skills/interests: 
+            <select>
+                <option>Coding</option>
+                <option>Writing</option>
+                <option>Sports</option>
+                <option>Music</option>
+                <option>Volunteering</option>
+            </select>
+        </div>
+        <br>
+            <div>
+                Date of availability: <input type="date" name="date">
+            </div>
+        </div>
+        <div>
+            <input type="reset" value="RESET">
+            <input type="submit" value="SUBMIT">
+        </div>
+    </form>
 </body>
 </html>
