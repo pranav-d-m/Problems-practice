@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;// a  b  c
+
+    printf("Input 3 numbers:\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+
+    char *yo = (a != b && b != c && a != c)?"All are different":"All are same";
+    printf("%s",yo);
+}
