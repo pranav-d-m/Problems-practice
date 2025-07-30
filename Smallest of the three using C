@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;// a  b  c
+
+    printf("Input 3 numbers:\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+
+    int min = a < b ? (a < c ? a : c) : (b < c ? b : c);
+    printf("Minimum of the three is : %d", min);
+}
