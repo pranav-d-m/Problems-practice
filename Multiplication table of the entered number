@@ -1,0 +1,19 @@
+/*To print multiplication table of a number which is entered buy the user*/
+#include <stdio.h>
+int main()
+{
+    int n,i,prod;
+
+    printf("Enter the number : ");
+    scanf("%d",&n);
+
+    for(int g = 0; g <= 10; g++)
+    {
+        printf("*");
+    }
+    for(i = 1; i <= 10; i++)
+    {
+        prod = n*i;
+        printf("\n%d x %d = %d",n,i,prod);
+    }
+}
