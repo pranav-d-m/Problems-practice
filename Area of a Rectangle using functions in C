@@ -1,0 +1,14 @@
+#include <stdio.h>
+float area(float length, float width);
+int main() 
+{
+    float l = 10.5,w = 5.2,ar;
+
+    ar = area(l,w);
+    printf("%d",ar);
+    return 0;
+}
+float area(float length, float width)
+{
+    return length*width;
+}
