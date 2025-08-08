@@ -1,0 +1,21 @@
+/* To print this pattern 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+*/
+#include <stdio.h>
+int main() 
+{
+    int i, j, n = 5; 
+    
+    for(i = 1; i <= n; i++)
+    {
+        printf("\n");
+        for(j = n; j >= i; j--)
+        {
+            printf("* ");
+        }
+    }
+}
