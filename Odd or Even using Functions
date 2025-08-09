@@ -1,0 +1,24 @@
+#include <stdio.h>
+void odd_or_eve(int a);
+int main() 
+{
+    int num;
+
+    printf("Enter any number: ");
+    scanf("%d",&num);
+    
+    odd_or_eve(num);
+
+    return 0;
+}
+void odd_or_eve(int a)
+{
+    if(a%2 == 0)
+    {
+        printf("Even number");
+    }
+    else
+    {
+        printf("Odd number");
+    }
+}
