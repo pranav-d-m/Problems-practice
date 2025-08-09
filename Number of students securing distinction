@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{
+    int marks[10],high = 0;
+
+    for(int i = 0; i <= 10; i++)
+    {
+        scanf("%d",&marks[10]);
+    }
+
+    for(int j = 0;j <= 10; j++)
+    {
+        if(marks[j] >= 80)
+        {
+            high += 1;
+        }
+    }
+    printf("The number of students who have secured more than 80 marks are %d\n",high);
+    printf("The roll numbers of students who have scored more than 80 marks are: ");
+
+    for(int j = 0;j <= 10; j++)
+    {
+        if(marks[j] >= 80)
+        {
+            printf("%d, ",j);
+        }
+    }
+}
