@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() 
+{ 
+    int i;
+    printf("Note: In this array, multiples of 3 are called 'Fizz', multiples of 5 are called 'Buzz' and multiples of both are called 'Fizz Buzz'.\n");
+    printf("Array: ");
+    for(i = 0; i <= 100; i++)
+    {
+        if(i % 3 == 0)
+        {
+            printf("Fizz ");
+        }
+        else if(i % 5 == 0)
+        {
+            printf("Buzz ");
+        }
+        else if(i % 3 == 0 && i % 5 == 0)
+        {
+            printf("Fizz-Buzz ");
+        }
+        else
+            printf("%d ",i);
+    }
+    return 0;
+}
