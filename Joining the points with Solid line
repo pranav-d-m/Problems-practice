@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+y_pts = np.array([3,8,1,10,4,2,5])
+
+plt.plot(y_pts,'-',marker = '*')
+plt.show()
