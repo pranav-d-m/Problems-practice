@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x_pts = np.array([1,2,6,8])
+y_pts = np.array([3,8,1,10])
+
+plt.plot(x_pts,y_pts,'o')
+plt.show()
