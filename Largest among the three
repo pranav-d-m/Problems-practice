@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner myObj = new Scanner(System.in);
+
+        System.out.print("Enter 'a' value: ");
+        int a = myObj.nextInt();
+        
+        System.out.print("Enter 'b' value: ");
+        int b = myObj.nextInt();
+
+        System.out.print("Enter 'c' value: ");
+        int c = myObj.nextInt();
+
+        int largest = a > b ? (a > c ? a : c) : (b > c ? b : c);
+        System.out.println("The largest among the three is "+largest);
+    }
+}
