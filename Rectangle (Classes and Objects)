@@ -1,0 +1,21 @@
+class rectangle{
+    int length,breadth;
+
+    void perimeter(){
+        System.out.println("Perimeter = "+ 2*(length+breadth));
+    }
+    void area(){
+        System.out.println("Area = " + length*breadth);
+    }
+}
+public class practice{
+    public static void main(String args[]){
+        rectangle p1 = new rectangle();
+
+        p1.length = 31;
+        p1.breadth = 21;
+
+        p1.perimeter();
+        p1.area();
+    }
+}
