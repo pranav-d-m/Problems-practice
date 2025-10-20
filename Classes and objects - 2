@@ -1,0 +1,26 @@
+class Student{
+    String name;
+    int marks;
+
+    void checkresult(){
+        if(marks >= 35)
+            System.out.println(name + " has Passed");
+        else   
+            System.out.println(name + " has Failed");
+    }
+}
+public class practice{
+    public static void main(String args[]){
+        Student s1 = new Student();
+
+        s1.name = "Alexa";
+        s1.marks = 80;
+        s1.checkresult();
+
+        Student s2 = new Student();
+
+        s2.name = "Perplexity";
+        s2.marks = 21;
+        s2.checkresult();
+    }
+}
