@@ -1,0 +1,47 @@
+class Box{
+    double width;
+    double height;
+    double depth;
+
+    //Constructor used when all the dimensions are specified
+    Box(double w, double h, double d){
+        width = w;
+        height = h;
+        depth = d;
+    }
+    //Constructor use when no dimensions are specified
+    Box(){
+        width = -1; //Represents Uninitialized box
+        height = -1;
+        depth = -1;
+    }
+    //Consturctor used when a cube is created
+    Box(double len){
+        width = height = depth;
+    }
+
+    double volume(){
+        return width*height*depth;
+    }
+}
+public class practice{
+    public static void main(String args[]){
+        Box myBox1 = new Box(10,20,30);
+        Box myBox2 = new Box();
+        Box mycube = new Box(7);
+
+        double vol;
+
+        //get volume of first box
+        vol = myBox1.volume();
+        System.out.println("Volume of the box1 "+ vol);
+
+        //get volume of second box
+        vol = myBox2.volume();
+        System.out.println("Volume of the box2 "+ vol);
+
+        //get volume of first box
+        vol = mycube.volume();
+        System.out.println("Volume of the cube "+ vol);
+    }
+}
