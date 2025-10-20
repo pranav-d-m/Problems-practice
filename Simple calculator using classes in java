@@ -1,0 +1,32 @@
+//Simple calculator
+class calculator{
+    int a,b;
+
+    int add(){
+        return a+b;
+    }
+    int multiply(){
+        return a*b;
+    }
+    int subtract(){
+        return a-b;
+    }
+    int divide(){
+        return a/b;
+    }
+}
+public class practice{
+    public static void main(String args[]){
+        calculator c1 = new calculator();
+        c1.a = 1234;
+        c1.b = 4321;
+        System.out.println("The addition of two numbers is "+ c1.add());
+        System.out.println("The multiplication of two numbers is "+ c1.multiply());
+
+        calculator c2 = new calculator();
+        c2.a = 324;
+        c2.b = 321;
+        System.out.println("The multiplication of two numbers is "+ c2.multiply());
+        System.out.println("The addition of two numbers is "+ c2.add());
+    }
+}
