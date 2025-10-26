@@ -1,0 +1,58 @@
+package cse;
+import java.util.Scanner;
+public class matadd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		if(args.length<1) {
+			System.out.println("Please provide the size of the matrix N as a command line argument.");
+			return;
+		}
+		int N = Integer.parseInt(args [0]);
+		int a[][] = new int[N][N];
+		int b[][] = new int[N][N];
+		int c[][] = new int[N][N];
+		
+		Scanner sc = new Scanner(System.in);
+		
+		//Input first matrix
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				a[i][j] = sc.nextInt();
+			}
+		}
+		//Input second matrix
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				b[i][j] = sc.nextInt();
+			}
+		}
+		//Print first matrix
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+		//Print second matrix
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				System.out.print(b[i][j]+" ");
+			}
+			System.out.println();
+		}
+		//Perform addition
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				c[i][j] = a[i][j]+b[i][j];
+			}
+		}
+		//Print the sum of matrices
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < N; j++) {
+				System.out.print(c[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+}
