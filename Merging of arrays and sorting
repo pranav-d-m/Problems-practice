@@ -1,0 +1,67 @@
+#include <stdio.h>
+int main()
+{
+    int n,m,p;
+    int ind_1 = 0,ind_2 = 0;
+    printf("Enter the number of elements in the first array: ");
+    scanf("%d",&n);
+    printf("Enter the number of elements in the second array: ");
+    scanf("%d",&m);
+
+    int arr_1[n],arr_2[m];
+
+    printf("Enter the elements of the first array: ");
+    for(int i = 0; i < n; i++){
+        scanf("%d",&arr_1[i]);
+    }
+    printf("Enter the elements of the second array: ");
+    for(int i = 0; i < m; i++){
+        scanf("%d",&arr_2[i]);
+    }
+
+    p = n+m;
+    int arr_3[p],ind = 0;
+
+    while(ind_1 < n && ind_2 < m){
+        if(arr_1[ind_1] < arr_2[ind_2]){
+            arr_3[ind] = arr_1[ind_1];
+            ind_1++;
+        }
+        else{
+            arr_3[ind] = arr_2[ind_2];
+            ind_2++;
+        }
+        ind++;
+    }
+
+    // Remaining elements of arr_2
+    while(ind_2 < m){
+        arr_3[ind] = arr_2[ind_2];
+        ind_2++;
+        ind++;
+    }
+
+    // Remaining elements of arr_1
+    while(ind_1 < n){
+        arr_3[ind] = arr_1[ind_1];
+        ind_1++;
+        ind++;
+    }
+
+    
+    for(int i = 0; i < p-1; i++){
+        for(int j = 0; j < p-i-1; j++){
+            if(arr_3[j] > arr_3[j+1]){
+                int temp = arr_3[j+1];
+                arr_3[j+1] = arr_3[j];
+                arr_3[j] = temp;
+            }
+        }
+    }
+    printf("The merged array is: [");
+    for(int i = 0; i < p; i++){
+        printf("%d ",arr_3[i]);
+    }
+    printf("]");
+    return 0;
+}
